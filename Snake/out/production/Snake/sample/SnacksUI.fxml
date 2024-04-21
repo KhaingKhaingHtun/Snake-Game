@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SnacksController">
+   <children>
+      <HBox prefHeight="300.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutY="250.0" prefHeight="20.0" prefWidth="300.0" text="mysnake.support.com" textAlignment="CENTER" textFill="#2216cf" underline="true" />
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutY="5.0" prefHeight="60.0" prefWidth="300.0" text="My Snake" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Button fx:id="btnCustomized" layoutX="119.0" layoutY="230.0" mnemonicParsing="false" onAction="#processbacktoCustomize" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Choose">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Choose Animals" />
+                     </tooltip>
+                  </Button>
+                  <Label fx:id="lblStatus" alignment="CENTER" layoutY="15.0" prefHeight="60.0" prefWidth="400.0" text="Choose Snacks">
+                     <font>
+                        <Font name="Broadway" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnRandomSnack" layoutX="25.0" layoutY="90.0" mnemonicParsing="false" onAction="#processRandomSnack" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack10.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Random Snacks" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnBurger" layoutX="95.0" layoutY="90.0" mnemonicParsing="false" onAction="#processBurger" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Burger" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnChicken" layoutX="165.0" layoutY="90.0" mnemonicParsing="false" onAction="#processChicken" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Fried Chicken" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnDonut" layoutX="235.0" layoutY="90.0" mnemonicParsing="false" onAction="#processDonut" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Donut" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnDumpling" layoutX="305.0" layoutY="90.0" mnemonicParsing="false" onAction="#processDumpling" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Dumpling" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnFries" layoutX="25.0" layoutY="160.0" mnemonicParsing="false" onAction="#processFries" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="French Fries" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnHotdog" layoutX="95.0" layoutY="160.0" mnemonicParsing="false" onAction="#processHotdog" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack6.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Hotdog" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnPizza" layoutX="165.0" layoutY="160.0" mnemonicParsing="false" onAction="#processPizza" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack7.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Pizza" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnSandwich" layoutX="234.0" layoutY="160.0" mnemonicParsing="false" onAction="#processSandwich" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack8.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Sandwich" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnSushi" layoutX="305.0" layoutY="160.0" mnemonicParsing="false" onAction="#processSushi" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/snack9.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Sushi" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnHome" layoutX="315.0" layoutY="230.0" mnemonicParsing="false" onAction="#processgotoHome" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Go to Home" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </children>
+</AnchorPane>

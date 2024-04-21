@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DetailController">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutY="75.0" prefHeight="60.0" prefWidth="250.0" text="My Snake" textAlignment="CENTER">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="250.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutY="450.0" prefHeight="20.0" prefWidth="250.0" text="mysnake.support.com" textAlignment="CENTER" textFill="#2216cf" underline="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Button fx:id="btnHome" layoutX="293.0" layoutY="415.0" mnemonicParsing="false" onAction="#processgotoHome" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Home">
+                     <font>
+                        <Font name="Constantia" size="17.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="detailTable" layoutX="6.0" layoutY="79.0" prefHeight="307.0" prefWidth="441.0" style="-fx-background-color: #8BE8E5;">
+                    <columns>
+                        <TableColumn fx:id="index" prefWidth="38.0" style="-fx-background-color: #8BE8E5; -fx-border-color: white; -fx-font-family: sylfaen; -fx-font-size: 12;" text="No." />
+                      <TableColumn fx:id="total_score" prefWidth="87.0" style="-fx-background-color: #8BE8E5; -fx-border-color: white; -fx-font-size: 12; -fx-font-family: sylfaen;" text="Total Score" />
+                      <TableColumn fx:id="total_fruit_eaten" prefWidth="123.0" style="-fx-background-color: #8BE8E5; -fx-border-color: white; -fx-text-wrap: true; -fx-font-size: 12; -fx-font-family: sylfaen;" text="Total Fruit Eaten" />
+                        <TableColumn fx:id="start_time" prefWidth="94.0" style="-fx-background-color: #8BE8E5; -fx-border-color: white; -fx-font-size: 12; -fx-font-family: sylfaen;" text="Start Time" />
+                        <TableColumn fx:id="end_time" prefWidth="98.0" style="-fx-background-color: #8BE8E5; -fx-border-color: white; -fx-font-size: 12; -fx-font-family: sylfaen;" text="End Time" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnHistory" layoutX="31.0" layoutY="415.0" mnemonicParsing="false" onAction="#processgotoHistory" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="History">
+                     <font>
+                        <Font name="Sylfaen" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblStatus" alignment="CENTER" contentDisplay="TOP" layoutX="-1.0" layoutY="14.0" prefHeight="30.0" prefWidth="451.0" text="Detail History of" textAlignment="CENTER">
+                     <font>
+                        <Font name="Sylfaen" size="24.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="1.0" layoutY="61.0" prefHeight="0.0" prefWidth="450.0" />
+                  <Separator layoutY="403.0" prefHeight="3.0" prefWidth="451.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

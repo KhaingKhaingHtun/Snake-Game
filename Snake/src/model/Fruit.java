@@ -1,0 +1,5 @@
+package model;
+
+public enum Fruit {
+	APPLE, BANANA, BERRY, CHERRY, COCONUT, MELON, ORANGE, PEACH, POMEGRANATE, RANDOMFRUITS
+}

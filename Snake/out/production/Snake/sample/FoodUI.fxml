@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FruitsController">
+   <children>
+      <HBox prefHeight="300.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutY="250.0" prefHeight="20.0" prefWidth="300.0" text="mysnake.support.com" textAlignment="CENTER" textFill="#2216cf" underline="true" />
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutY="5.0" prefHeight="60.0" prefWidth="300.0" text="My Snake" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Button fx:id="btnSkin" layoutX="119.0" layoutY="230.0" mnemonicParsing="false" onAction="#processbacktoCustomize" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Choose">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblStatus" alignment="CENTER" layoutY="20.0" prefHeight="60.0" prefWidth="400.0" text="Choose Fruits">
+                     <font>
+                        <Font name="Broadway" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnApple" layoutX="40.0" layoutY="100.0" mnemonicParsing="false" onAction="#processApple" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_apple.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnHome" layoutX="315.0" layoutY="230.0" mnemonicParsing="false" onAction="#processgotoHome" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnBerry" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onAction="#processBerry" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_berry.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCherry" layoutX="160.0" layoutY="100.0" mnemonicParsing="false" onAction="#processCherry" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_cherry.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCoconut" layoutX="220.0" layoutY="100.0" mnemonicParsing="false" onAction="#processCoconut" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_coconut_.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnOrange" layoutX="280.0" layoutY="100.0" mnemonicParsing="false" onAction="#processOrange" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPeach" layoutX="40.0" layoutY="160.0" mnemonicParsing="false" onAction="#processPeach" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_peach.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPomegranate" layoutX="100.0" layoutY="160.0" mnemonicParsing="false" onAction="#processPomegranate" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_pomegranate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnTomato" layoutX="160.0" layoutY="160.0" mnemonicParsing="false" onAction="#processTomato" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_tomato.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnMelon" layoutX="220.0" layoutY="160.0" mnemonicParsing="false" onAction="#processMelon" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_watermelon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnBanana" layoutX="280.0" layoutY="160.0" mnemonicParsing="false" onAction="#processBanana" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_banana.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </children>
+</AnchorPane>

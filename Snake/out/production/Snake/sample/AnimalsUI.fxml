@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AnimalsController">
+   <children>
+      <HBox prefHeight="300.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutY="250.0" prefHeight="20.0" prefWidth="300.0" text="mysnake.support.com" textAlignment="CENTER" textFill="#2216cf" underline="true" />
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutY="5.0" prefHeight="60.0" prefWidth="300.0" text="My Snake" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Button fx:id="btnCustomized" layoutX="119.0" layoutY="230.0" mnemonicParsing="false" onAction="#processbacktoCustomize" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Choose">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Choose Animals" />
+                     </tooltip>
+                  </Button>
+                  <Label fx:id="lblStatus" alignment="CENTER" layoutY="15.0" prefHeight="60.0" prefWidth="400.0" text="Choose Animals">
+                     <font>
+                        <Font name="Broadway" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnRandomAnimal" layoutX="25.0" layoutY="90.0" mnemonicParsing="false" onAction="#processRandomAnimal" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal10.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Random Animals" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnBird" layoutX="95.0" layoutY="90.0" mnemonicParsing="false" onAction="#processBird" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Bird" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnBunny" layoutX="165.0" layoutY="90.0" mnemonicParsing="false" onAction="#processBunny" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Bunny" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnEgg" layoutX="235.0" layoutY="90.0" mnemonicParsing="false" onAction="#processEgg" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Eggs" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnFrog" layoutX="305.0" layoutY="90.0" mnemonicParsing="false" onAction="#processFrog" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Frog" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnHamster" layoutX="25.0" layoutY="160.0" mnemonicParsing="false" onAction="#processHamster" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Hamster" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnHedgehog" layoutX="95.0" layoutY="160.0" mnemonicParsing="false" onAction="#processHedgehog" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal6.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Hedgehog" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnKoala" layoutX="165.0" layoutY="160.0" mnemonicParsing="false" onAction="#processKoala" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal7.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Koala" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnMouse" layoutX="234.0" layoutY="160.0" mnemonicParsing="false" onAction="#processMouse" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal8.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Mouse" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnSquirrel" layoutX="305.0" layoutY="160.0" mnemonicParsing="false" onAction="#processSquirrel" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/animal9.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Squirrel" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnHome" layoutX="315.0" layoutY="230.0" mnemonicParsing="false" onAction="#processgotoHome" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Go to Home" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </children>
+</AnchorPane>

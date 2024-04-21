@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingsController">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutY="75.0" prefHeight="60.0" prefWidth="300.0" text="My Snake" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutY="450.0" prefHeight="20.0" prefWidth="300.0" text="mysnake.support.com" textAlignment="CENTER" textFill="#2216cf" underline="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Button fx:id="btnDeleteAccount" layoutX="120.0" layoutY="330.0" mnemonicParsing="false" onAction="#processDeleteAccount" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Delete Account">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLogout" layoutX="120.0" layoutY="190.0" mnemonicParsing="false" onAction="#processLogout" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Logout">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="90.0" fitWidth="60.0" layoutX="327.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/home1.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnGotoHome" layoutX="120.0" layoutY="120.0" mnemonicParsing="false" onAction="#processGotoHome" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Home">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnChangePassword" layoutX="120.0" layoutY="260.0" mnemonicParsing="false" onAction="#processChangePassword" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Change Password">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

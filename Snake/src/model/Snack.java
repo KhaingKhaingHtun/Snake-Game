@@ -1,0 +1,5 @@
+package model;
+
+public enum Snack {
+	BURGER, CHICKEN, DONUT, DUMPLING, FRIES, HOTDOG, PIZZA, SANDWICH, SUSHI, RAMDOMSNACKS
+}
